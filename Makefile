@@ -1,5 +1,5 @@
 DOCKERFILE		:= Dockerfile
-PROJECT     	:= cartographer-vnc
+PROJECT     	:= cartographer-ros-vnc
 ORIGIN     		:= $(shell git remote get-url origin | sed -e 's/^.*@//g')
 REVISION    	:= $(shell git rev-parse --short HEAD)
 USERNAME		:= naokitakahashi12
