@@ -19,5 +19,6 @@ RUN apt update && \
 		rosdep install --from-paths src --ignore-src --rosdistro=kinetic -y; \
 		catkin_make_isolated --install --use-ninja; \
 	' && \
+	apt autoremove -y && \
 	apt clean && \
 	rm -rf /var/lib/apt/lists/*
