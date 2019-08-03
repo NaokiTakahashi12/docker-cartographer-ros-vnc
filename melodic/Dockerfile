@@ -21,4 +21,5 @@ RUN apt update && \
 	' && \
 	apt autoremove -y && \
 	apt clean && \
-	rm -rf /var/lib/apt/lists/*
+	rm -rf /var/lib/apt/lists/* && \
+	echo "source /cartographer_ws/devel_isolated/setup.bash" >> ~/.bashrc
